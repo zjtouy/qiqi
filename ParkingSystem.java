@@ -1,7 +1,7 @@
 public class ParkingSystem implements IParking{
 ...
 public static void main(String[] args) throws Exception {
-        IParams params = IParking.parse();//ParkingSystem.parse();
+        IParams params = ParkingSystem.parse();//ParkingSystem.parse();
         ParkingSystem ps = new ParkingSystem(params.getBig(), params.getMedium(),params.getSmall());
         ArrayList<Integer> plan = params.getPlanParking();
         for (int i = 0; i < plan.size(); i++) {
